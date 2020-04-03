@@ -4,10 +4,10 @@ apply image on another image with correct perspective and effect
 Using the script:
 
 from applyengraved import CreateImage<br><br>
-# Load the image on which we want to apply engravings<br>
+#Load the image on which we want to apply engravings<br>
 img="box.jpg"              <br>
 # the image to be aded on 'img'<br>
-putonimage="result.jpg"<br>
+putonimage="cat.jpg"<br>
 # white image with quadrilateral black shape that shows perspective field where the engravings will be aplyed<br>
 mask="boxedges.png"      <br>
 # the real world ratio of the field in perspective<br>
