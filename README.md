@@ -1,5 +1,6 @@
 # apply-engraved-effect<br>
 A script used in product customizator. Purpose was to get different images from the user and return how it would look on the product<br>
+cv2 required.<br>
 
 # Using the script:
 from applyengraved import CreateImage<br><br>
