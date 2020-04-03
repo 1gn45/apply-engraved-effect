@@ -1,5 +1,5 @@
-# apply-engraved-effect
-apply image on another image with correct perspective and effect
+# apply-engraved-effect<br>
+A script used in product customizator. Purpose was to get different images from the user and return how it would look on the product<br>
 
 Using the script:
 
