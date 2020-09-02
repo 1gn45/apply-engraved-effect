@@ -1,5 +1,5 @@
 # apply-engraved-effect<br>
-A script used in product customizator. Purpose was to get dynamic product images for different engraving designs applied on the product. Mainly for etsy, ebay, etc.Library 'cv2' required.<br>
+A script used in product customizator. Purpose was to get dynamic product images for different engraving designs applied on the product. Mainly for etsy, ebay, etc. <br>Library 'cv2' required.<br>
 
 ![alt text](https://raw.githubusercontent.com/1gn45/apply-engraved-effect/master/representative.jpg)
 
