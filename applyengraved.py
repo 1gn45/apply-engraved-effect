@@ -91,8 +91,9 @@ def CreateImage(mainimage, putonimagex, edgesimgx, putonratio, texture, filter1)
         # putonratio - the real world ratio of the field in perspective
         # texture - the same image as 'mainimage' but photoshoped with needed effect
         # filter1 - Might be same as 'edgesimgx', but can put more white areas where we want to avoid the angravings to be aded
-
-
+    filter1=cv2.imread(filter1)
+    img=cv2.imread(mainimage)
+    texture=cv2.imread(texture)
     points4, height, width = get4edgesinimage(cv2.imread(edgesimgx))
     putonimage=cv2.imread(putonimagex)
     height1, width1, channels = putonimage.shape
@@ -104,4 +105,6 @@ def CreateImage(mainimage, putonimagex, edgesimgx, putonratio, texture, filter1)
     pts2 = np.float32([points4[0], points4[1], points4[2], points4[3]])
     matrix = cv2.getPerspectiveTransform(pts1, pts2)
     result = cv2.warpPerspective(putonimage, matrix, (width, height))     #######result=image aplied on perspective
-
+    result=cv2.add(result, filter1)
+    finished=addengraved(img, texture, result)
+    cv2.imwrite("result.jpg", finished)
