@@ -20,3 +20,5 @@ flt="boxfilter.png"         <br><br>
 
 Create engraved image:<br>
 CreateImage(img, putonimage, mask, ratio, texture, flt)
+
+result.jpg Image will be created
